@@ -4233,10 +4233,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knex@3.2.10:
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/knex/-/knex-3.2.10.tgz#ca8f77a10851b1e18b26463a6dc995e563c3b165"
-  integrity sha512-oypTHfrc9i72iyxaUQBKHOxhcr0xM65MPf6FpN02nimsftXwzXprIkLjfXdubvhbu4PMWLp023q8o8CYvHSuZw==
+knex@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-3.3.0.tgz#451d24d5670939fc4ce54f2269163dbf2627d682"
+  integrity sha512-LgWl031hNuLv9Lhxdd9093zULa2aNcoP04Bk29e5NidgRcEr/T0rAr2WYi4BhjTiCDoQiRU56meUE5rppLKZzQ==
   dependencies:
     colorette "2.0.19"
     commander "^10.0.0"
@@ -4250,7 +4250,7 @@ knex@3.2.10:
     pg-connection-string "2.6.2"
     rechoir "^0.8.0"
     resolve-from "^5.0.0"
-    tarn "^3.0.2"
+    tarn "^3.1.0"
     tildify "2.0.0"
 
 leven@^3.1.0:
@@ -4795,10 +4795,10 @@ pg-connection-string@2.6.2:
   resolved "https://registry.yarnpkg.com/pg-connection-string/-/pg-connection-string-2.6.2.tgz#713d82053de4e2bd166fab70cd4f26ad36aab475"
   integrity sha512-ch6OwaeaPYcova4kKZ15sbJ2hKb/VP48ZD2gE7i1J+L4MspCtBMAx8nMgz7bksc7IojCIIWuEhHibSMFH8m8oA==
 
-pg-connection-string@^2.13.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/pg-connection-string/-/pg-connection-string-2.13.0.tgz#8678113465a5af3cc977dcb51eadc847b27aa2de"
-  integrity sha512-EMnU9E2fSULdsbErBbMaXJvFeD9B4+nPcM3f+4lsiCR0BHLPrLVjv3DbyM2hgQQviKJaTWIRRTjKjWlHg3p2ig==
+pg-connection-string@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/pg-connection-string/-/pg-connection-string-2.14.0.tgz#abc26ee4f37c56c0f3ae0fcf0b0653cc4e1c0fd9"
+  integrity sha512-XwWDGcLRGCXAR8F/AM5bG7Q+A3Wm2s6QeEjlOKZLlH3UYcguiqCWKyWXVag5TLTIjR7oOJUY8kcADaZgWPyLeg==
 
 pg-int8@1.0.1:
   version "1.0.1"
@@ -4810,10 +4810,10 @@ pg-pool@^3.14.0:
   resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-3.14.0.tgz#f35ae4eb846780cad71af24099b3edfa9781ad90"
   integrity sha512-gKtPkFdQPU3DksooVLi9LsjZxrsBUZIpa+7aVx+LV5pNh0KzP4Zleud2po+ConrxbuXGBJ6Hfer6hdgpIBpBaw==
 
-pg-protocol@^1.14.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/pg-protocol/-/pg-protocol-1.14.0.tgz#c1f045b74274b007078c687147141f785f59b8de"
-  integrity sha512-n5taZ1kO3s9ngDTVxsEznOqCyToTgz0FLuPq0B33COy5pPpuWJpY3/2oRBVETuOgzdqRXfWpM9HIhp2LBBT1BA==
+pg-protocol@^1.15.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/pg-protocol/-/pg-protocol-1.15.0.tgz#758f6c0679cc0bbf4938603b7597703f333180c0"
+  integrity sha512-cq9sECI5s0+uPUXjbz8ioyPJni6RzsRib0US67i5IoTZKw8fNeYlVE7u8F4dG7vEJJtc5wdD1K189lCCUwqWTQ==
 
 pg-types@2.2.0:
   version "2.2.0"
@@ -4826,14 +4826,14 @@ pg-types@2.2.0:
     postgres-date "~1.0.4"
     postgres-interval "^1.1.0"
 
-pg@8.21.0:
-  version "8.21.0"
-  resolved "https://registry.yarnpkg.com/pg/-/pg-8.21.0.tgz#d7fa2118d960cec5cc7d2b24525f9850dd5932b0"
-  integrity sha512-AUP1EYJuHraQGsVoCQVIcM7TEJVGtDzxWtGFZd8rds9d+CCXlU5Js1rYgfLNvxy9iJrpHjGrRjoi/3BT9fRyiA==
+pg@8.22.0:
+  version "8.22.0"
+  resolved "https://registry.yarnpkg.com/pg/-/pg-8.22.0.tgz#55ca3975026180c6dced6eec3a20a844c2dc9237"
+  integrity sha512-8wih1vVIBMxoUM2oB4soJsD9tDnDpLv4OXBJ+EJzFsvycD+lfyIreC2gGHq78f8jbLLt+bvlPTFdFZfJkOuzAA==
   dependencies:
-    pg-connection-string "^2.13.0"
+    pg-connection-string "^2.14.0"
     pg-pool "^3.14.0"
-    pg-protocol "^1.14.0"
+    pg-protocol "^1.15.0"
     pg-types "2.2.0"
     pgpass "1.0.5"
   optionalDependencies:
@@ -5716,10 +5716,10 @@ synckit@^0.11.8:
   dependencies:
     "@pkgr/core" "^0.2.4"
 
-tarn@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/tarn/-/tarn-3.0.2.tgz#73b6140fbb881b71559c4f8bfde3d9a4b3d27693"
-  integrity sha512-51LAVKUSZSVfI05vjPESNc5vwqqZpbXCsU+/+wxlOrUjk2SnFTt97v9ZgQrD4YmxYW1Px6w2KjaDitCfkvgxMQ==
+tarn@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/tarn/-/tarn-3.1.0.tgz#fb805043610843ab2ad16e7631e6c61bfdca326f"
+  integrity sha512-QDihlHbXxQ4SnuQcRd1TPNBHUYo/hafDRDP82COYSVfRcx/3qnfGDkn1WFjozVl+AYr8ZyDKSQ/kIgHH1ri1yg==
 
 test-exclude@^6.0.0:
   version "6.0.0"
