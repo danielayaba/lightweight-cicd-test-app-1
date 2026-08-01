@@ -1,5 +1,6 @@
 {
   "name": "hello",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@tailwindcss/cli": "4.3.2",
@@ -7,5 +8,10 @@
     "esbuild": "0.28.1",
     "esbuild-copy-static-files": "0.1.0",
     "tailwindcss": "4.3.2"
+  },
+  "scripts": {
+    "build:js": "NODE_ENV=production node esbuild.config.mjs",
+    "build:css": "tailwindcss -i css/app.css -o ../public/css/app.css --minify",
+    "build": "mkdir -p ../public/js ../public/css && npm run build:js && npm run build:css"
   }
 }

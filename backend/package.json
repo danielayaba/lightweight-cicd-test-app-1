@@ -1,4 +1,6 @@
 {
+  "name": "hello-backend",
+  "version": "1.0.0",
   "repository": {},
   "main": "./src/server",
   "dependencies": {
@@ -24,6 +26,8 @@
   },
   "scripts": {
     "watch-production": "node ./src/server",
-    "watch-development": "nodemon"
+    "watch-development": "nodemon",
+    "lint": "eslint \"./**/*.js\"",
+    "test": "SECRET_KEY=${SECRET_KEY:-insecure_key_for_tests} jest --rootDir test/ --forceExit"
   }
 }

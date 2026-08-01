@@ -94,7 +94,10 @@ quality() {
 
 test() {
   # Run back-end test suite
-  cmd jest --rootDir test/ --forceExit "${@}"
+  #
+  # RUN_DB_TESTS enables the tests that talk to Postgres and Redis. They can
+  # only pass in here, where both services are up.
+  cmd env RUN_DB_TESTS=1 jest --rootDir test/ --forceExit "${@}"
 }
 
 knex() {

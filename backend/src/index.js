@@ -12,9 +12,16 @@ const redis = require('./redis');
 
 app.use(morgan('common'));
 
+// Sessions live in Redis everywhere except under test, where no Redis server
+// is running (the CI pipeline executes jest without service containers).
+// Passing no store falls back to the in-memory store built into express-session.
+const sessionStore = process.env.NODE_ENV === 'test'
+  ? undefined
+  : new RedisStore({ client: redis });
+
 app.use(
   session({
-    store: new RedisStore({ client: redis }),
+    store: sessionStore,
     secret: config.express.secret,
     resave: false,
     saveUninitialized: false,
