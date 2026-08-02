@@ -7,10 +7,16 @@ const RedisStore = require('connect-redis')(session);
 const app = express();
 const pages = require('./routes/pages');
 const up = require('./routes/up');
+const health = require('./routes/health');
 const config = require('../config');
 const redis = require('./redis');
 
 app.use(morgan('common'));
+
+// Mounted ahead of the session middleware on purpose: a liveness probe that
+// goes through the session store would start failing whenever Redis does, and
+// the pipeline would read that as a deployment that never came up.
+app.use('/health', health);
 
 // Sessions live in Redis everywhere except under test, where no Redis server
 // is running (the CI pipeline executes jest without service containers).
