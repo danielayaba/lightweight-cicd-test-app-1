@@ -36,7 +36,7 @@ env:
   # Identifies this application in the benchmarking dataset. The comparison
   # applications reuse this same workflow with a different value here, so the
   # recorded rows land in the right group when evaluate.py aggregates them.
-  APPLICATION_NAME: baseline-app
+  APPLICATION_NAME: lightweight-cicd-test-app-1
 
 jobs:
   # ------------------------------------------------------------
